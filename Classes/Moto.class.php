@@ -14,5 +14,3 @@ class Moto extends Veiculo {
   }
 
 }
-
-?>

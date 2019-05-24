@@ -20,5 +20,3 @@ class Carro extends Veiculo {
   }
 
 }
-
-?>
