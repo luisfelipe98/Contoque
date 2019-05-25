@@ -17,7 +17,8 @@ require 'req.php';
 
   <div class="wrapper">
     <form action="" method="post" autocomplete="off" class="form-login">
-      <h1 class="titulo_login">Login</h1>
+      <img src="media/logo-honda.png" alt="Logo Honda" class="logo_login">
+      <!--<h1 class="titulo_login">Login</h1>-->
       <label for="email">E-mail</label>
       <input type="email" name="email" id="email" placeholder="Seu e-mail" autocomplete="off">
       <label for="senha">Senha</label>
