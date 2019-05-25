@@ -20,9 +20,9 @@ require 'req.php';
       <img src="media/logo-honda.png" alt="Logo Honda" class="logo_login">
       <!--<h1 class="titulo_login">Login</h1>-->
       <label for="email">E-mail</label>
-      <input type="email" name="email" id="email" placeholder="Seu e-mail" autocomplete="off">
+      <input type="email" name="email" id="email" placeholder="Seu e-mail" autocomplete="off" required>
       <label for="senha">Senha</label>
-      <input type="password" name="senha" id="senha" placeholder="Sua senha" autocomplete="off">
+      <input type="password" name="senha" id="senha" placeholder="Sua senha" autocomplete="off" required>
       <input type="submit" value="Login" name="login" class="btn btn_enviar">
     </form>
   </div>
