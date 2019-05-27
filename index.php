@@ -16,15 +16,13 @@ require 'req.php';
 <body>
 
   <div class="wrapper">
-    <form action="controler/VerificaLogin.php" method="post" autocomplete="off" class="form-login">
-      <img src="media/logo-honda.png" alt="Logo Honda" class="logo_login">
-      <!--<h1 class="titulo_login">Login</h1>-->
-      <label for="email">E-mail</label>
-      <input type="email" name="email" id="email" placeholder="Seu e-mail" autocomplete="off" required>
-      <label for="senha">Senha</label>
-      <input type="password" name="senha" id="senha" placeholder="Sua senha" autocomplete="off" required>
-      <input type="submit" value="Login" name="login" class="btn btn_enviar">
-    </form>
+      <form action="controler/VerificaLogin.php" method="post" autocomplete="off" class="form-login">
+        <img src="media/logo-honda.png" alt="Logo Honda" class="logo_login">
+        <!--<h1 class="titulo_login">Login</h1>-->
+        <input type="email" name="email" id="email" placeholder="E-mail" autocomplete="off" required>
+        <input type="password" name="senha" id="senha" placeholder="Senha" autocomplete="off" required>
+        <input type="submit" value="Login" name="login" class="btn btn_enviar">
+      </form>
   </div>
 </body>
 </html>
