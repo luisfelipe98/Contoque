@@ -16,7 +16,7 @@ require 'req.php';
 <body>
 
   <div class="wrapper">
-    <form action="" method="post" autocomplete="off" class="form-login">
+    <form action="controler/VerificaLogin.php" method="post" autocomplete="off" class="form-login">
       <img src="media/logo-honda.png" alt="Logo Honda" class="logo_login">
       <!--<h1 class="titulo_login">Login</h1>-->
       <label for="email">E-mail</label>
@@ -28,5 +28,3 @@ require 'req.php';
   </div>
 </body>
 </html>
-
-

@@ -39,9 +39,9 @@ CREATE TABLE `carro` (
   `motor` varchar(5) NOT NULL,
   `cambio` char(1) NOT NULL,
   `lugares` char(1) NOT NULL,
-  `qntMin` int(10) NOT NULL,
-  `qntMax` int(10) NOT NULL,
-  `qntAtual` int(10) NOT NULL,
+  `qtdeMin` int(10) NOT NULL,
+  `qtdeMax` int(10) NOT NULL,
+  `qtdeAtu` int(10) NOT NULL,
   `manutencao` decimal(10,3) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -60,9 +60,9 @@ CREATE TABLE `moto` (
   `isNovo` tinyint(1) NOT NULL,
   `lugares` char(1) NOT NULL,
   `cilindradas` int(4) NOT NULL,
-  `qntMin` int(10) NOT NULL,
-  `qntMax` int(10) NOT NULL,
-  `qntAtual` int(10) NOT NULL,
+  `qtdeMin` int(10) NOT NULL,
+  `qtdeMax` int(10) NOT NULL,
+  `qtdeAtu` int(10) NOT NULL,
   `manutencao` decimal(10,3) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
