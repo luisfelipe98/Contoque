@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="../vendor/css/site.css">
     <link rel="stylesheet" href="../vendor/css/dash.css">
 
-    <title>Contoque | Dashboard</title>
+    <title>Contoque | Carros</title>
 </head>
 
 <body>
@@ -34,8 +34,8 @@
             <section class="painel-principal">
                 <header class="cabecalho-painel-principal">
                     <div class="titulos-painel-principal">
-                        <h2 class="titulo-painel-principal">PAINEL</h2>
-                        <!--                <h3 class="subtitulo-painel-principal"></h3>-->
+                        <h2 class="titulo-painel-principal">Carros</h2>
+                        <h3 class="subtitulo-painel-principal">Listagem dos Carros</h3>
                     </div>
                 </header>
             </section>

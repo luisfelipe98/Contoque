@@ -50,7 +50,6 @@
     border-radius: 3px;
     width: 100%;
     padding: 10px;
-    transition: ease 2s;
 }
 .menu-sidebar__item:hover{
     transition: display ease 5s;
@@ -245,7 +244,7 @@ select{
     border-bottom: 1px solid rgba(120,135,182,.1);
 }
 .titulo-painel-principal{
-
+    color: #e74c3c;
 
 }
 .subtitulo-painel-principal{
