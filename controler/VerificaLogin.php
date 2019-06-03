@@ -18,22 +18,15 @@ try {
   if ($stmt->rowCount() == 1) {
     $lista = $stmt->fetch();
     session_start();
-
+    $_SESSION["logado"] = 1;
+    $_SESSION["nome"] = $lista["nome"];
+    header("Location: ../view/dash.php");
   } else {
     throw new PDOException("Usuário inexistente");
   }
 
-
-  echo "<pre>";
-  var_dump($lista);
-  echo "</pre>";
-
 } catch (PDOException $e) {
-  echo  $e->getMessage();
+  header("Location: ../index.php?msg=". $e->getMessage());
 }
-echo "<pre>";
-var_dump($stmt->rowCount());
-echo "</pre>";
-
 
 ?>
