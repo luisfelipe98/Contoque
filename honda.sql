@@ -60,6 +60,7 @@ CREATE TABLE `moto` (
   `isNovo` tinyint(1) NOT NULL,
   `lugares` char(1) NOT NULL,
   `cilindradas` int(4) NOT NULL,
+  `cambio` char(1) NOT NULL,
   `qtdeMin` int(10) NOT NULL,
   `qtdeMax` int(10) NOT NULL,
   `qtdeAtu` int(10) NOT NULL,
