@@ -1,0 +1,80 @@
+								Populando o Banco Honda
+									Carros
+
+INSERT INTO carro (modelo, ano, combustivel, cor, isNovo, portas, motor, cambio, lugares, qtdeMin, qtdeMax, qtdeAtu, manutencao) VALUES 
+("Fit", "2017", "F", "Prata", false, 5, "1.5", "A", 5, 2, 10, 3, 250.000);
+INSERT INTO carro (modelo, ano, combustivel, cor, isNovo, portas, motor, cambio, lugares, qtdeMin, qtdeMax, qtdeAtu, manutencao) VALUES 
+("Fit", "2018", "F", "Vermelho", false, 5, "1.5", "M", 5, 2, 10, 5, 275.000);
+INSERT INTO carro (modelo, ano, combustivel, cor, isNovo, portas, motor, cambio, lugares, qtdeMin, qtdeMax, qtdeAtu, manutencao) VALUES 
+("Fit", "2019", "F", "Preto", true, 5, "1.5", "A", 5, 5, 18, 9, 400.000);
+
+INSERT INTO carro (modelo, ano, combustivel, cor, isNovo, portas, motor, cambio, lugares, qtdeMin, qtdeMax, qtdeAtu, manutencao) VALUES 
+("City", "2017", "F", "Branco", false, 5, "1.5", "M", 5, 2, 10, 3, 250.000);
+INSERT INTO carro (modelo, ano, combustivel, cor, isNovo, portas, motor, cambio, lugares, qtdeMin, qtdeMax, qtdeAtu, manutencao) VALUES 
+("City", "2018", "F", "Preta", false, 5, "1.5", "A", 5, 2, 10, 3, 280.000);
+INSERT INTO carro (modelo, ano, combustivel, cor, isNovo, portas, motor, cambio, lugares, qtdeMin, qtdeMax, qtdeAtu, manutencao) VALUES 
+("City", "2019", "F", "Prata", true, 5, "1.5", "A", 5, 3, 15, 5, 350.000);
+
+INSERT INTO carro (modelo, ano, combustivel, cor, isNovo, portas, motor, cambio, lugares, qtdeMin, qtdeMax, qtdeAtu, manutencao) VALUES 
+("Civic", "2017", "F", "Branco", false, 5, "1.5i", "M", 5, 2, 10, 3, 230.000);
+INSERT INTO carro (modelo, ano, combustivel, cor, isNovo, portas, motor, cambio, lugares, qtdeMin, qtdeMax, qtdeAtu, manutencao) VALUES 
+("Civic", "2018", "F", "Prata", false, 5, "1.5i", "A", 5, 2, 13, 3, 330.000);
+INSERT INTO carro (modelo, ano, combustivel, cor, isNovo, portas, motor, cambio, lugares, qtdeMin, qtdeMax, qtdeAtu, manutencao) VALUES 
+("Civic", "2019", "F", "Vermelho", true, 5, "1.5i", "A", 5, 5, 18, 7, 385.000);
+
+INSERT INTO carro (modelo, ano, combustivel, cor, isNovo, portas, motor, cambio, lugares, qtdeMin, qtdeMax, qtdeAtu, manutencao) VALUES 
+("HR-V", "2017", "F", "Cinza", false, 5, "1.8l", "M", 5, 2, 10, 3, 295.000);
+INSERT INTO carro (modelo, ano, combustivel, cor, isNovo, portas, motor, cambio, lugares, qtdeMin, qtdeMax, qtdeAtu, manutencao) VALUES 
+("HR-V", "2018", "F", "Preto", false, 5, "1.8i", "A", 5, 4, 19, 6, 335.000);
+INSERT INTO carro (modelo, ano, combustivel, cor, isNovo, portas, motor, cambio, lugares, qtdeMin, qtdeMax, qtdeAtu, manutencao) VALUES 
+("HR-V", "2019", "F", "Cinza", true, 5, "1.8i", "A", 5, 4, 25, 9, 435.000);
+
+INSERT INTO carro (modelo, ano, combustivel, cor, isNovo, portas, motor, cambio, lugares, qtdeMin, qtdeMax, qtdeAtu, manutencao) VALUES 
+("WR-V", "2017", "F", "Preto", false, 5, "1.5l", "A", 5, 2, 18, 4, 345.000);
+INSERT INTO carro (modelo, ano, combustivel, cor, isNovo, portas, motor, cambio, lugares, qtdeMin, qtdeMax, qtdeAtu, manutencao) VALUES 
+("WR-V", "2018", "F", "Prata", false, 5, "1.5l", "A", 5, 5, 20, 6, 375.000);
+INSERT INTO carro (modelo, ano, combustivel, cor, isNovo, portas, motor, cambio, lugares, qtdeMin, qtdeMax, qtdeAtu, manutencao) VALUES 
+("WR-V", "2019", "F", "Vermelho", true, 5, "1.5l", "A", 5, 7, 21, 9, 455.000);
+
+									 Motos
+
+INSERT INTO moto (modelo, ano, combustivel, cor, isNovo, lugares, cilindradas, cambio, qtdeMin, qtdeMax, qtdeAtu, manutencao) VALUES
+("CG", 2017, "G", "Cinza", false, 2, "162cc", "M", 3, 15, 6, 145.000);
+INSERT INTO moto (modelo, ano, combustivel, cor, isNovo, lugares, cilindradas, cambio, qtdeMin, qtdeMax, qtdeAtu, manutencao) VALUES
+("CG", 2018, "G", "Vermelho", false, 2, "162cc", "M", 2, 12, 5, 165.000);
+INSERT INTO moto (modelo, ano, combustivel, cor, isNovo, lugares, cilindradas, cambio, qtdeMin, qtdeMax, qtdeAtu, manutencao) VALUES
+("CG", 2019, "G", "Preto", true, 2, "162cc", "M", 2, 20, 9, 185.000);
+
+INSERT INTO moto (modelo, ano, combustivel, cor, isNovo, lugares, cilindradas, cambio, qtdeMin, qtdeMax, qtdeAtu, manutencao) VALUES
+("Biz", 2017, "G", "Prata", false, 2, "110cc", "A", 2, 10, 4, 115.000);
+INSERT INTO moto (modelo, ano, combustivel, cor, isNovo, lugares, cilindradas, cambio, qtdeMin, qtdeMax, qtdeAtu, manutencao) VALUES
+("Biz", 2018, "G", "Cinza", false, 2, "110cc", "A", 2, 13, 3, 125.000);
+INSERT INTO moto (modelo, ano, combustivel, cor, isNovo, lugares, cilindradas, cambio, qtdeMin, qtdeMax, qtdeAtu, manutencao) VALUES
+("Biz", 2019, "G", "Branco", true, 2, "110cc", "A", 2, 18, 7, 145.000);
+
+INSERT INTO moto (modelo, ano, combustivel, cor, isNovo, lugares, cilindradas, cambio, qtdeMin, qtdeMax, qtdeAtu, manutencao) VALUES
+("PCX", 2017, "G", "Vermelho", false, 2, "150cc", "A", 2, 10, 4, 150.000);
+INSERT INTO moto (modelo, ano, combustivel, cor, isNovo, lugares, cilindradas, cambio, qtdeMin, qtdeMax, qtdeAtu, manutencao) VALUES
+("PCX", 2018, "G", "Prata", false, 2, "150cc", "A", 2, 14, 4, 165.000);
+INSERT INTO moto (modelo, ano, combustivel, cor, isNovo, lugares, cilindradas, cambio, qtdeMin, qtdeMax, qtdeAtu, manutencao) VALUES
+("PCX", 2019, "G", "Preto", true, 2, "150cc", "A", 2, 20, 7, 190.000);
+
+INSERT INTO moto (modelo, ano, combustivel, cor, isNovo, lugares, cilindradas, cambio, qtdeMin, qtdeMax, qtdeAtu, manutencao) VALUES
+("XRE", 2017, "G", "Branco", false, 2, "300cc", "M", 2, 12, 5, 200.000);
+INSERT INTO moto (modelo, ano, combustivel, cor, isNovo, lugares, cilindradas, cambio, qtdeMin, qtdeMax, qtdeAtu, manutencao) VALUES
+("XRE", 2018, "G", "Prata", false, 2, "300cc", "M", 2, 15, 7, 225.000);
+INSERT INTO moto (modelo, ano, combustivel, cor, isNovo, lugares, cilindradas, cambio, qtdeMin, qtdeMax, qtdeAtu, manutencao) VALUES
+("XRE", 2019, "G", "Preto", true, 2, "300cc", "M", 5, 20, 10, 250.000);
+
+INSERT INTO moto (modelo, ano, combustivel, cor, isNovo, lugares, cilindradas, cambio, qtdeMin, qtdeMax, qtdeAtu, manutencao) VALUES
+("CB", 2017, "G", "Cinza", false, 2, "250cc", "M", 2, 12, 5, 160.000);
+INSERT INTO moto (modelo, ano, combustivel, cor, isNovo, lugares, cilindradas, cambio, qtdeMin, qtdeMax, qtdeAtu, manutencao) VALUES
+("CB", 2018, "G", "Prata", false, 2, "250cc", "M", 2, 10, 4, 175.000);
+INSERT INTO moto (modelo, ano, combustivel, cor, isNovo, lugares, cilindradas, cambio, qtdeMin, qtdeMax, qtdeAtu, manutencao) VALUES
+("CB", 2019, "G", "Cinza", true, 2, "250cc", "M", 4, 15, 9, 190.000);
+
+									 Usuário
+
+INSERT INTO usuario (nome, email, senha) VALUES ("Luis Felipe", "luis@honda.com.br", "luis123");
+INSERT INTO usuario (nome, email, senha) VALUES ("Daniel Fellipe", "daniel@honda.com.br", "daniel123");
+INSERT INTO usuario (nome, email, senha) VALUES ("Jean", "jean@honda.com.br", "jean123");
