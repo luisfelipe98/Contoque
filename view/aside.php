@@ -1,3 +1,5 @@
+<?php session_start(); ?>
+<?php require '../req.php'; ?>
 <aside class="sidebar">
 
     <header class="logo-menu">
@@ -5,7 +7,7 @@
     </header>
 
     <div class="usuario-logado">
-        Fellipe
+        <?php echo $_SESSION["nome"]; ?>
     </div>
 
     <nav class="menu-sidebar">
@@ -27,6 +29,9 @@
             </li>
             <li class="menu-sidebar__item">
                 <a class="menu-sidebar__link" href="../view/saida.php">Saída</a>
+            </li>
+            <li class="menu-sidebar__item">
+                <a class="menu-sidebar__link" href="../controler/logout.php">Sair</a>
             </li>
         </ul>
     </nav>

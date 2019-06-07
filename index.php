@@ -1,6 +1,3 @@
-<?php
-require 'req.php';
-?>
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -16,7 +13,7 @@ require 'req.php';
 <body>
 
   <div class="wrapper">
-      <form action="controler/VerificaLogin.php" method="post" autocomplete="off" class="form-login">
+      <form action="controler/verificaLogin.php" method="post" autocomplete="off" class="form-login">
         <img src="media/logo-honda.png" alt="Logo Honda" class="logo_login">
         <!--<h1 class="titulo_login">Login</h1>-->
         <input type="email" name="email" id="email" placeholder="E-mail" autocomplete="off" required>
