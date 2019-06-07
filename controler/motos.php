@@ -32,6 +32,23 @@ class Motos {
     }
   }
 
+  function apagarMoto(Moto $moto) {
+    try {
+      $query = "DELETE FROM moto WHERE id = :id";
+      $conexao = Conexao::getConnection();
+      $stmt = $conexao->prepare($query);
+      $stmt->bindValue(":id", $moto->getId());
+      $stmt->execute();
+        if ($stmt->rowCount() == 1) {
+          return "Moto apagada com sucesso";
+        } else {
+          throw new PDOException("Erro ao apagar a moto");
+        }
+    } catch (PDOException $e) {
+      return $e->getMessage();
+    }
+  }
+
 }
 
 ?>
