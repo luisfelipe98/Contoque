@@ -11,7 +11,7 @@
     <nav class="menu-sidebar">
         <ul class="menu-sidebar__lista">
             <li class="menu-sidebar__item">
-                <a class="menu-sidebar__link" href="#">Painel</a>
+                <a class="menu-sidebar__link" href="../view/dash.php">Painel</a>
             </li>
             <li class="menu-sidebar__item">
                 <a class="menu-sidebar__link" href="../view/veiculos.php">Veículos</a>

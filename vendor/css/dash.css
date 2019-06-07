@@ -245,6 +245,7 @@ select{
 }
 .titulo-painel-principal{
     color: #e74c3c;
+    text-transform: uppercase;
 
 }
 .subtitulo-painel-principal{
