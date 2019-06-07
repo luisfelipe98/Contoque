@@ -7,7 +7,7 @@ $senha = $_POST['senha'];
 
 try {
 
-  $query = "SELECT * FROM usuario WHERE email = :email AND senha = :senha";
+  $query = "SELECT * FROM hnd_usuario WHERE email = :email AND senha = :senha";
 
   $conexao = Conexao::getConnection();
   $stmt = $conexao->prepare($query);

@@ -12,7 +12,7 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="../vendor/css/site.css">
-    <link rel="stylesheet" href="../vendor/css/dash.css">
+    <link rel="stylesheet" href="../../ContoqueHonda/view/tema/css/dash.css">
 
     <title>Contoque | Saída</title>
 </head>

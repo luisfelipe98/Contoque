@@ -12,7 +12,7 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="../vendor/css/site.css">
-    <link rel="stylesheet" href="../vendor/css/dash.css">
+    <link rel="stylesheet" href="../../ContoqueHonda/view/tema/css/dash.css">
 
     <title>Contoque | Motos</title>
 </head>
@@ -38,6 +38,38 @@
                         <h3 class="subtitulo-painel-principal">Listagem de Motos</h3>
                     </div>
                 </header>
+                <table class="tabela">
+                    <thead class="tabela-cabecalho">
+                    <tr class="tabela-titulo">
+                        <th>Modelo</th>
+                        <th>Ano</th>
+                        <th>Combustível</th>
+                        <th>Cor</th>
+                        <th>Novo?</th>
+                        <th>Lugares</th>
+                        <th>Cilindradas</th>
+                        <th>Qntd Mínima</th>
+                        <th>Qntd Máxima</th>
+                        <th>Qntd Atual</th>
+                        <th>Manutenção</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr class="linha-tabela">
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    </tbody>
+                </table>
             </section>
         </section>
 
