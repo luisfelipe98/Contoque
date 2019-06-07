@@ -49,6 +49,37 @@ class Motos {
     }
   }
 
+  function adicionarMoto(Moto $moto) {
+    try {
+      $query = "INSERT INTO moto (modelo, ano, combustivel, cor, isNovo,
+                lugares, cilindradas, cambio, qtdeMin, qtdeMax, qtdeAtu, manutencao)
+                VALUES (:modelo, :ano, :combustivel, :cor, :isNovo, :lugares,
+                :clindradas, :cambio, :qtdeMin, :qtdeMax, :qtdeAtu, :manutencao)";
+      $conexao = Conexao::getConnection();
+      $stmt = $conexao->prepare($query);
+      $stmt->bindValue(":modelo", $moto->getModelo());
+      $stmt->bindValue(":ano", $moto->getAno());
+      $stmt->bindValue(":combustivel", $moto->getCombustivel());
+      $stmt->bindValue(":cor", $moto->getCor());
+      $stmt->bindValue(":isNovo", $moto->getIsNovo());
+      $stmt->bindValue(":lugares", $moto->getLugares());
+      $stmt->bindValue(":cilindradas", $moto->getCilindradas());
+      $stmt->bindValue(":cambio", $moto->getCambio());
+      $stmt->bindValue(":qtdeMin", $moto->getQtdeMin());
+      $stmt->bindValue(":qtdeMax", $moto->getQtdeMax());
+      $stmt->bindValue(":qtdeAtu", $moto->getQtdeAtu());
+      $stmt->bindValue(":manutencao", $moto->getManutencao());
+      $stmt->execute();
+      if ($stmt->rowCount() == 1) {
+        return "Moto adicionado com sucesso";
+      } else {
+        throw new PDOException("Erro ao adicionar a moto");
+      }
+    } catch (PDOException $e) {
+      return $e->getMessage();
+    }
+  }
+
 }
 
 ?>

@@ -4,8 +4,8 @@ class Moto extends Veiculo {
 
   private $cilindradas;
 
-  function __construct ($id, $modelo, $ano, $combustivel, $cor, $isNovo, $lugares, $qtdeMin, $qtdeMax, $qtdeAtu, $manutencao, $cilindradas) {
-    parent::__construct ($id, $modelo, $ano, $combustivel, $cor, $isNovo, $lugares, $qtdeMin, $qtdeMax, $qtdeAtu, $manutencao);
+  function __construct ($id, $modelo, $ano, $combustivel, $cor, $isNovo, $lugares, $cambio, $qtdeMin, $qtdeMax, $qtdeAtu, $manutencao, $cilindradas) {
+    parent::__construct ($id, $modelo, $ano, $combustivel, $cor, $isNovo, $lugares, $cambio, $qtdeMin, $qtdeMax, $qtdeAtu, $manutencao);
     $this->cilindradas = $cilindradas;
   }
 

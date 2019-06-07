@@ -49,6 +49,38 @@ class Carros {
     }
   }
 
+  function adicionarCarro(Carro $car) {
+    try {
+      $query = "INSERT INTO carro (modelo, ano, combustivel, cor, isNovo, portas,
+                motor, cambio, lugares, qtdeMin, qtdeMax, qtdeAtu, manutencao)
+                VALUES (:modelo, :ano, :combustivel, :cor, :isNovo, :portas,
+                :motor, :cambio, :lugares, :qtdeMin, :qtdeMax, :qtdeAtu, :manutencao)";
+      $conexao = Conexao::getConnection();
+      $stmt = $conexao->prepare($query);
+      $stmt->bindValue(":modelo", $car->getModelo());
+      $stmt->bindValue(":ano", $car->getAno());
+      $stmt->bindValue(":combustivel", $car->getCombustivel());
+      $stmt->bindValue(":cor", $car->getCor());
+      $stmt->bindValue(":isNovo", $car->getIsNovo());
+      $stmt->bindValue(":portas", $car->getPortas());
+      $stmt->bindValue(":motor", $car->getMotor());
+      $stmt->bindValue(":cambio", $car->getCambio());
+      $stmt->bindValue(":lugares", $car->getLugares());
+      $stmt->bindValue(":qtdeMin", $car->getQtdeMin());
+      $stmt->bindValue(":qtdeMax", $car->getQtdeMax());
+      $stmt->bindValue(":qtdeAtu", $car->getQtdeAtu());
+      $stmt->bindValue(":manutencao", $car->getManutencao());
+      $stmt->execute();
+      if ($stmt->rowCount() == 1) {
+        return "Carro adicionado com sucesso";
+      } else {
+        throw new PDOException("Erro ao adicionar o carro");
+      }
+    } catch (PDOException $e) {
+      return $e->getMessage();
+    }
+  }
+
 }
 
  ?>

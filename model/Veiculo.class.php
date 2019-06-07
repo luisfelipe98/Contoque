@@ -9,12 +9,13 @@ abstract class Veiculo {
   private $cor;
   private $isNovo;
   private $lugares;
+  private $cambio;
   private $qtdeMin;
   private $qtdeMax;
   private $qtdeAtu;
   private $manutencao;
 
-  function __construct ($id, $modelo, $ano, $combustivel, $cor, $isNovo, $lugares, $qtdeMin, $qtdeMax, $qtdeAtu, $manutencao) {
+  function __construct ($id, $modelo, $ano, $combustivel, $cor, $isNovo, $lugares, $cambio, $qtdeMin, $qtdeMax, $qtdeAtu, $manutencao) {
     $this->id = $id;
     $this->modelo = $modelo;
     $this->ano = $ano;
@@ -22,6 +23,7 @@ abstract class Veiculo {
     $this->cor = $cor;
     $this->isNovo = $isNovo;
     $this->lugares = $lugares;
+    $this->cambio = $cambio;
     $this->qtdeMin = $qtdeMin;
     $this->qtdeMax = $qtdeMax;
     $this->qtdeAtu = $qtdeAtu;
@@ -54,6 +56,10 @@ abstract class Veiculo {
 
   function getLugares() {
     return $this->lugares;
+  }
+
+  function getCambio() {
+    return $this->cambio;
   }
 
   function getQtdeMin() {

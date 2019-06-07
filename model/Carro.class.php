@@ -4,10 +4,9 @@ class Carro extends Veiculo {
 
   private $portas;
   private $motor;
-  private $cambio;
 
-  function __construct ($id, $modelo, $ano, $combustivel, $cor, $isNovo, $lugares, $qtdeMin, $qtdeMax, $qtdeAtu, $manutencao, $motor, $cambio, $portas) {
-    parent::__construct ($id, $modelo, $ano, $combustivel, $cor, $isNovo, $lugares, $qtdeMin, $qtdeMax, $qtdeAtu, $manutencao);
+  function __construct ($id, $modelo, $ano, $combustivel, $cor, $isNovo, $lugares, $cambio, $qtdeMin, $qtdeMax, $qtdeAtu, $manutencao, $motor, $portas) {
+    parent::__construct ($id, $modelo, $ano, $combustivel, $cor, $isNovo, $lugares, $cambio, $qtdeMin, $qtdeMax, $qtdeAtu, $manutencao);
     $this->motor = $motor;
     $this->cambio = $cambio;
     $this->portas = $portas;
@@ -15,10 +14,6 @@ class Carro extends Veiculo {
 
   public function getMotor() {
     return $this->motor;
-  }
-
-  public function getCambio() {
-    return $this->cambio;
   }
 
   public function getPortas() {
