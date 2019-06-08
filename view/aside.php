@@ -1,5 +1,5 @@
-<?php session_start(); ?>
-<?php require '../req.php'; ?>
+
+<?php //require '../req.php'; ?>
 <aside class="sidebar">
 
     <header class="logo-menu">
@@ -7,16 +7,13 @@
     </header>
 
     <div class="usuario-logado">
-        <?php echo $_SESSION["nome"]; ?>
+        <?php //echo $_SESSION["nome"]; ?>
     </div>
 
     <nav class="menu-sidebar">
         <ul class="menu-sidebar__lista">
             <li class="menu-sidebar__item">
                 <a class="menu-sidebar__link" href="../view/dash.php">Painel</a>
-            </li>
-            <li class="menu-sidebar__item">
-                <a class="menu-sidebar__link" href="../view/veiculos.php">Veículos</a>
             </li>
             <li class="menu-sidebar__item">
                 <a class="menu-sidebar__link" href="../view/carros.php">Carros</a>

@@ -1,3 +1,16 @@
+<?php
+require_once "../req.php";
+require_once "../controler/carros.php";
+require_once "../controler/motos.php";
+
+$carros = new Carros();
+$quantidadeCarros = $carros->quantosCarros();
+
+$motos = new Motos();
+$qntMotos = $motos->quantasMotos();
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -38,6 +51,24 @@
                         <!--<h3 class="subtitulo-painel-principal"></h3>-->
                     </div>
                 </header>
+                <div class="cards">
+                    <div class="card">
+                        <h2>CARROS</h2>
+                        <img src="../media/civic.png" alt="civic">
+                        <h3 class="subtitulo-card"><?php foreach ($quantidadeCarros as $qnt){
+                                echo $qnt[0];
+                            } ?></h3>
+                    </div>
+
+                    <div class="card">
+                        <h2>MOTOS</h2>
+                        <img src="../media/rr.png" alt="RR 1000">
+                        <h3 class="subtitulo-card"><?php foreach ($quantidadeCarros as $qnt){
+                                echo $qnt[0];
+                            } ?></h3>
+                    </div>
+
+                </div>
             </section>
 
         </section>

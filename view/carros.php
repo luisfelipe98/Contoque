@@ -1,3 +1,7 @@
+<?php
+require_once "../controler/carros.php";
+$carros = new Carros();
+?>
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -57,21 +61,33 @@
                     </tr>
                     </thead>
                     <tbody>
+                    <?php
+                        $resultado = $carros->getCarros();
+                        foreach( $resultado as $item) :
+                    ?>
                     <tr class="linha-tabela">
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td><?php echo $item['modelo'];?></td>
+                        <td><?php echo $item['ano'];?></td>
+                        <td><?php echo $item['combustivel'];?></td>
+                        <td><?php echo $item['cor'];?></td>
+                        <td><?php
+                            if ($item['isNovo'] == 1){
+                            echo "Sim";
+                            }else{
+                                echo "Não";
+                            };?></td>
+                        <td><?php echo $item['portas'];?></td>
+                        <td><?php echo $item['motor'];?></td>
+                        <td><?php echo $item['cambio'];?></td>
+                        <td><?php echo $item['lugares'];?></td>
+                        <td><?php echo $item['qtdeMin'];?></td>
+                        <td><?php echo $item['qtdeMax'];?></td>
+                        <td><?php echo $item['qtdeAtu'];?></td>
+                        <td><?php echo $item['manutencao'];?></td>
                     </tr>
+
+                    <?php endforeach;?>
+
                     </tbody>
                 </table>
             </section>

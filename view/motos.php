@@ -1,3 +1,7 @@
+<?php
+require_once "../controler/motos.php";
+$motos = new Motos();
+?>
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -48,6 +52,7 @@
                         <th>Novo?</th>
                         <th>Lugares</th>
                         <th>Cilindradas</th>
+                        <th>Cambio</th>
                         <th>Qntd Mínima</th>
                         <th>Qntd Máxima</th>
                         <th>Qntd Atual</th>
@@ -55,19 +60,31 @@
                     </tr>
                     </thead>
                     <tbody>
-                    <tr class="linha-tabela">
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
+                    <?php
+                    $resultado = $motos->getMotos();
+                    foreach( $resultado as $item) :
+                        ?>
+                        <tr class="linha-tabela">
+                            <td><?php echo $item['modelo'];?></td>
+                            <td><?php echo $item['ano'];?></td>
+                            <td><?php echo $item['combustivel'];?></td>
+                            <td><?php echo $item['cor'];?></td>
+                            <td><?php
+                                if ($item['isNovo'] == 1){
+                                    echo "Sim";
+                                }else{
+                                    echo "Não";
+                                };?></td>
+                            <td><?php echo $item['lugares'];?></td>
+                            <td><?php echo $item['cilindradas'];?></td>
+                            <td><?php echo $item['cambio'];?></td>
+                            <td><?php echo $item['qtdeMin'];?></td>
+                            <td><?php echo $item['qtdeMax'];?></td>
+                            <td><?php echo $item['qtdeAtu'];?></td>
+                            <td><?php echo $item['manutencao'];?></td>
+                        </tr>
+
+                    <?php endforeach;?>
                     </tbody>
                 </table>
             </section>
