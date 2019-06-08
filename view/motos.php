@@ -1,4 +1,5 @@
 <?php
+require_once "../req.php";
 require_once "../controler/motos.php";
 $motos = new Motos();
 ?>
@@ -81,7 +82,7 @@ $motos = new Motos();
                             <td><?php echo $item['qtdeMin'];?></td>
                             <td><?php echo $item['qtdeMax'];?></td>
                             <td><?php echo $item['qtdeAtu'];?></td>
-                            <td><?php echo $item['manutencao'];?></td>
+                            <td>R$ <?php echo number_format($item['manutencao'],2, ",", ".");?></td>
                         </tr>
 
                     <?php endforeach;?>

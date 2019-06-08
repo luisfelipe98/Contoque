@@ -136,6 +136,18 @@ class Carros {
     }
   }
 
+    function ultimoCarro() {
+        try {
+            $query = "SELECT MAX(modelo) FROM carro";
+            $conexao = Conexao::getConnection();
+            $resultado = $conexao->query($query);
+            $lista = $resultado->fetchAll();
+            return $lista;
+        } catch (PDOException $e) {
+            return $e->getMessage();
+        }
+    }
+
 
 }
 

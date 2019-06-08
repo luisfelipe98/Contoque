@@ -17,4 +17,5 @@ class Moto extends Veiculo {
     return 300 + parent::getManutencao();
   }
 
+
 }

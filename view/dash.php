@@ -5,9 +5,11 @@ require_once "../controler/motos.php";
 
 $carros = new Carros();
 $quantidadeCarros = $carros->quantosCarros();
+$ultCarro = $carros->ultimoCarro();
 
 $motos = new Motos();
 $qntMotos = $motos->quantasMotos();
+
 
 ?>
 
